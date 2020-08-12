@@ -60,6 +60,7 @@ func main() {
 		collector.NewEthHashrate(rpc),
 		collector.NewEthSyncing(rpc),
 		collector.NewParityNetPeers(rpc),
+		collector.NewEthHeightDiff(rpc),
 	)
 
 	handler := promhttp.HandlerFor(registry, promhttp.HandlerOpts{
