@@ -50,7 +50,6 @@ func (collector *EthHeightDiff) Collect(ch chan<- prometheus.Metric) {
 
 	// etherscan RPC2.0 over http (hex)
 	var etherscan_height int64
-	fmt.Println("https://api.etherscan.io/api?module=proxy&action=eth_blockNumber&apikey=" + os.Getenv("ETHERSCAN_TOKEN"))
 	respo, err := http.Get("https://api.etherscan.io/api?module=proxy&action=eth_blockNumber&apikey=" + os.Getenv("ETHERSCAN_TOKEN"))
 	if err != nil || respo.StatusCode != 200 {
 		fmt.Println("Error getting etherscan result", err)
