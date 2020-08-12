@@ -35,6 +35,7 @@ func main() {
 	ver := flag.Bool("v", false, "print version number and exit")
 
 	flag.Parse()
+
 	if len(flag.Args()) > 0 {
 		flag.Usage()
 	}
