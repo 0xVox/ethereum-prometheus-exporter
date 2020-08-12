@@ -1,4 +1,4 @@
-module github.com/31z4/ethereum-prometheus-exporter
+module github.com/0xVox/ethereum-prometheus-exporter
 
 require (
 	github.com/aristanetworks/goarista v0.0.0-20200124011733-f6bb3fedfb04 // indirect

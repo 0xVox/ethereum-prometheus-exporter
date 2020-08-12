@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/31z4/ethereum-prometheus-exporter/internal/collector"
+	"github.com/0xVox/ethereum-prometheus-exporter/internal/collector"
 	"github.com/ethereum/go-ethereum/rpc"
 	"github.com/prometheus/client_golang/prometheus"
 
